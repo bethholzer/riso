@@ -1,0 +1,470 @@
+.body {
+  font-family: IBM Plex Mono;
+  }
+
+  ::selection {
+    background-color: #fe5111;
+    color: white;
+  }
+
+  .back-filter {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6f3fb;
+    animation: filter-animation 20s infinite;
+    overflow: scroll;
+  }
+    
+  @keyframes filter-animation {
+    0% {
+      filter: hue-rotate(360deg);
+    }
+    
+    10% {
+      filter: hue-rotate(0deg);
+    }
+
+    90% {
+      filter: hue-rotate(0deg);
+    }
+    
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+.bottom-square{
+  height: 44px;
+  width: 44px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.top-squares{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
+
+.square-1{
+  background-color: #4bb7e4;
+  height: 44px;
+  width: 44px;
+  z-index: 100;
+}
+.square-2{
+  height: 44px;
+  width: 44px;
+  z-index: 100;
+}
+.square-3{
+  background-color: #ff58ff;
+  height: 44px;
+  width: 44px;
+  z-index: 100;
+}
+
+.square-4{
+  background-color: #fe5111;
+  height: 44px;
+  width: 44px;
+  z-index: 100;
+}
+.square-5{
+  background-color: #fe5111;
+  height: 44px;
+  width: 44px;
+  z-index: 100;
+}
+
+.square-6{
+  height: 44px;
+  width: 44px;
+  z-index: 100;
+  position: fixed;
+  bottom: 50vh;
+  right: 0;
+}
+
+.ticktock{
+transform: translate(300px);}
+
+#ticktock{
+  width: 80vw;
+}
+
+.blink {
+  animation: 1s infinite blink;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0%, 15% {
+      opacity: 0;
+  }
+  16%, 100% {
+      opacity: 1;
+  }
+}
+
+.pixel{
+  width: 20vw;
+  height: auto;
+}
+
+#clockContainer {
+  width: 80%;
+  padding-top: 20vh;
+  display: block;
+  margin: auto;
+
+}
+
+
+#face{
+  fill:none;
+  stroke: #231f20;
+}
+
+#hour,
+#minute,
+#second {
+  transform-origin: center;
+}
+
+.table, td, th {  
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: .5px solid #000;
+    text-align: center;
+  }
+
+.table{
+  border-collapse: collapse;
+}
+
+.th, td {
+  padding: 10px;
+}
+
+.print:hover{
+  color: #ff58ff;
+  cursor: crosshair;
+}
+
+#marquee {
+  font-family: 'gtf_soya_trialblack';
+  letter-spacing: .2rem;
+  font-size: 54px;
+  text-justify: center;
+  width:100vw;
+  height:26px;
+  background-color: #009933;
+}
+
+#marquee-2 {
+  font-family: 'gtf_soya_trialblack';
+  letter-spacing: .2rem;
+  font-size: 54px;
+  text-justify: center;
+  width:100vw;
+  height:26px;
+  background-color:#009933;
+}
+
+.column-1::-webkit-scrollbar {
+  display: none;
+}
+
+.column-1 {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+.column-2::-webkit-scrollbar {
+  display: none;
+}
+
+.column-2 {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+.column-3::-webkit-scrollbar {
+  display: none;
+}
+
+.column-3 {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+.column-4::-webkit-scrollbar {
+  display: none;
+}
+
+.column-4 {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+.column-5::-webkit-scrollbar {
+  display: none;
+}
+
+.column-5 {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;  
+}
+
+img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  .column{
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+  
+  .column-1 {
+    align-items: center;
+    width: 45vw;
+    height:120vh;
+  }
+
+  .column-2 {
+    justify-items: center;
+    width: 45vw;
+    height:120vh;
+  }
+
+  .column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 70vh;
+  }
+
+  .column-4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 30vw;
+    height: 70vh;
+    overflow: scroll;
+    align-items: center;
+
+  }
+
+  .column-5 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 30vw;
+    height: 70vh;
+    overflow: scroll;
+    align-items: center;
+
+  }
+
+  .hero{
+    padding-top: 5vh;
+    padding-left: 2vw;
+  }
+
+  .break{
+    width: 100vw;
+    height: auto;
+    overflow: scroll;
+  }
+
+  .bottom-nav{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bottom-left{
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    height: auto;
+    width: 50vw;
+    background-color: #4bb7e4;
+  }
+
+  .bottom-middle{
+    height: auto;
+    width: 25vw;
+    background-color: #ff58ff;
+  }
+
+  .bottom-right{
+    height: auto;
+    width: 25vw;
+    background-color: #fe5111;
+  }
+
+  #riso-1{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  #riso-5{
+    width: 100vw;
+    height: 40vh;
+    padding-bottom: 20px;
+  }
+
+  #riso-inline{
+    width: 80%;
+    margin-top: 60px;
+    margin-bottom: 20px;  
+
+  }
+
+.hidden {
+  display: none;
+}
+
+/* @media (max-width: 800px){
+
+  .body{
+    background-color: aliceblue;
+  }
+
+
+.column {
+  display: flex;  
+  flex-direction: column;      
+  width: 100vw;
+  overflow: visible;   
+  overflow-x: hidden;
+ 
+}
+
+.row {
+  display: flex;  
+  flex-direction: column;      
+  width: 100vw;
+  overflow: visible;   
+  overflow-x: hidden;
+ 
+
+} */
+
+@media print {
+
+  .back-filter {
+    display: none !important;
+  }
+
+  .body {
+    background-color: white !important;
+  }
+
+  .hidden {
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .master {
+    display: flex !important;
+    width: 100%;
+    height: auto;
+  }
+
+  .content{
+    display: none !important;
+  }
+
+  .column {
+    display: none !important;  
+  }
+  
+  .row {
+    display: none !important;    
+  }
+
+}
+
+}
+
+@font-face {
+  font-family: 'gtf_soya_trialblack';
+  src: url('gtfsoyatrial-black-webfont.woff2') format('woff2'),
+       url('gtfsoyatrial-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'gtf_soya_trialbold';
+  src: url('gtfsoyatrial-bold-webfont.woff2') format('woff2'),
+       url('gtfsoyatrial-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'gtf_soya_triallight';
+  src: url('css/gtfsoyatrial-light-webfont.woff2') format('woff2'),
+       url('css/gtfsoyatrial-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'gtf_soya_trialmedium';
+  src: url('font/GTFSoyaTRIAL-Medium.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'gtf_soya_trialregular';
+  src: url('gtfsoyatrial-regular-webfont.woff2') format('woff2'),
+       url('gtfsoyatrial-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
